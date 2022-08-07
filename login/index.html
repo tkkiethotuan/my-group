@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+    <script src="/assets/js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark position-sticky">
+                <div class="container-fluid">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="https://google.com" class="nav-link active">exit</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="content between">
+            <h1>Login</h1>
+
+            <div class="login_userName">
+                <label for="login_userName" class="login-label">User Name</label>
+                <input type="text" class="login-box" id="login_userName">
+            </div>
+
+            <div class="login_password">
+                <label for="login_password" class="login-label">Password</label>
+                <input type="password" class="login-box" id="login_password">
+            </div>
+
+            <button class="btn btn-primary" onclick="login()">Login</button>
+        </div>
+    </div>
+</body>
+</html>
