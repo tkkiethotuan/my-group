@@ -12,13 +12,85 @@
 <body>
     <div class="main">
         <div class="header">
-            <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
-                <div class="container-fluid">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a href="/information/" class="nav-link active"> <span class="material-symbols-outlined">arrow_back</span> Back</a></li>
-                    </ul>
-                </div>
-            </nav>
+            <div class="nav_pc">
+                <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+                    <div class="container-fluid">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="/home/" class="nav-link">home</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Information
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="/information/">All</a></li>
+                                    <li><a class="dropdown-item" href="/information/about/ho-tuan-kiet/">About Hồ Tuấn Kiệt</a></li>
+                                    <li><a class="dropdown-item" href="/information/about/nguyen-nhu-phuong-nhi/">About Nguyễn Như Phương Nhi</a></li>
+                                    <li><a class="dropdown-item" href="/information/about/ho-ngoc-bao-tram/">About Hồ Ngọc Bảo Trâm</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Event
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="/event/">All</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="nav_mobile">
+                <nav class="navbar navbar-dark bg-dark sticky-top">
+                    <div class="container-fluid">
+                        <!-- brand -->
+                        <a class="navbar-brand" href="#">information</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                            aria-labelledby="offcanvasDarkNavbarLabel">
+                            <div class="offcanvas-header">
+                                <!-- Header -->
+                                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Go to:</h5>
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <!-- Body -->
+                                    <li class="nav-item"><a href="/home/" class="nav-link">home</a></li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Information
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-dark">
+                                            <li><a class="dropdown-item" href="/information/">All</a></li>
+                                            <li><a class="dropdown-item" href="/information/about/ho-tuan-kiet/">About Hồ Tuấn Kiệt</a></li>
+                                            <li><a class="dropdown-item" href="/information/about/nguyen-nhu-phuong-nhi/">About Nguyễn Như Phương Nhi</a></li>
+                                            <li><a class="dropdown-item" href="/information/about/ho-ngoc-bao-tram/">About Hồ Ngọc Bảo Trâm</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Event
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-dark">
+                                            <li><a class="dropdown-item" href="/event/">All</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </div>
         <div class="content">
             <h1>Information About Hồ Tuấn Kiệt</h1>
@@ -26,8 +98,13 @@
             <ul>
                 <li>Họ và tên: Hồ Tuấn Kiệt</li>
                 <li>Tuổi: 13</li>
+                <li>Sở thích: Code, đọc manga, coi anime, học tiếng Nhật, sưu tập truyện</li>
                 <li>Năm sinh: 2009</li>
                 <li>Sinh nhật: 31/07</li>
+                <li>Điểm mạnh: Có sự tập trung cao, có thể làm một việc trong nhiều giờ liền, có lý luận riêng của mình theo từng vụ việc, không hùa theo đám đông.</li>
+                <li>Điểm yếu: Nóng tính, đôi khi khó gần, đi học thì hay suy xét môi trường chỗ học bla bla, học Tiếng Anh kém.</li>
+                <li>Đặc điểm nhận diện: Dân code</li>
+                <li>Giới thiệu sơ: Mập, cao khoảng 1m65, đầu tóc bù xù có khi cắt ngắn hoặc vuốt qua một bên, bị cận</li>
             </ul>
         </div>
     </div>
