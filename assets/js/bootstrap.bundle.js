@@ -7090,38 +7090,18 @@ function welcome__exit() {
 }
 
 
-function login() {
-  var user_name_list = ['hotuankiet', 'member']
+function enter_key() {
+  var key = ['loverem0202', 'member2022']
 
-  var hotuankiet_pass01 = "webadmin"
-  var hotuankiet_pass02 = "loverem0202"
+  var input_key = document.getElementById("login_key_input").value
 
-  var member_password = "bkqmember"
+  var check = key.includes(input_key)
 
-  var user_name_input = document.getElementById("login_userName").value
-
-  var password_input = document.getElementById("login_password").value
-
-  var check_userName = user_name_list.includes(user_name_input)
-
-  if (check_userName == true) {
-    if (user_name_input == 'hotuankiet') {
-      if (password_input == hotuankiet_pass01 || hotuankiet_pass02) {
-        alert("Welcome HoTuanKiet")
-        window.location.replace("/home/")
-      }
-      else {
-        alert("User name or password is not correct please try again")
-      }
-    }
-    else if (user_name_input == 'member') {
-      if (password_input == member_password) {
-        alert("Welcome member of '3 Kon Quỷ :))' group")
-        window.location.replace("/home/")
-      }
-    }
+  if (check == true) {
+    alert("Welcome")
+    window.location.replace("/home/")
   }
   else {
-    alert("User name or password is not correct please try again")
+    alert("Key is not correct, try again")
   }
 }
